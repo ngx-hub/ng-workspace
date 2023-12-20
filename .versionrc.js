@@ -3,15 +3,15 @@
 
 module.exports = {
 	scripts: {
-		prerelease: "echo prerelease",
-		prebump: "echo prebump",
-		postbump: "echo postbump",
-		prechangelog: "echo prechangelog",
-		postchangelog: "echo postchangelog",
-		precommit: "echo precommit",
-		postcommit: "echo postcommit",
-		pretag: "echo pretag",
-		posttag: "echo posttag"
+		// prerelease: "echo prerelease",
+		// prebump: "echo prebump",
+		// postbump: "echo postbump",
+		// prechangelog: "echo prechangelog",
+		// postchangelog: "echo postchangelog",
+		// precommit: "echo precommit",
+		// postcommit: "echo postcommit",
+		// pretag: "echo pretag",
+		// posttag: "echo posttag"
 	},
 	skip: {
 		bump: false,
