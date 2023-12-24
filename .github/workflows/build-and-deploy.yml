@@ -13,23 +13,20 @@ jobs:
     permissions:
       contents: write
     env:
-      GPAT: ${{ secrets.GPAT }}
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
     steps:
-      - uses: actions/checkout@v3
-
+      - name: Checkout the repo
+        uses: actions/checkout@v3
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: '18.x'
           cache: yarn
           cache-dependency-path: yarn.lock
-
       - name: Install dependencies
         run: yarn install --frozen-lockfile
-
       - name: Build
         run: yarn run build:gh-pages
-
       - name: Deploy demo 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v4
         with:
